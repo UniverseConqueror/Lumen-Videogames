@@ -13,5 +13,5 @@
 
 $router->get('/', [
     'as'=>'home',
-    'uses'=>'MainController@videogamesPage'
+    'uses'=>'MainController@homePage'
 ]);
