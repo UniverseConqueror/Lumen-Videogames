@@ -12,6 +12,6 @@
 */
 
 $router->get('/', [
+    'uses'=>'MainController@homePage',
     'as'=>'home',
-    'uses'=>'MainController@homePage'
 ]);

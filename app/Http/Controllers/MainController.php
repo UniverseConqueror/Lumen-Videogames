@@ -15,9 +15,10 @@ class MainController extends Controller
 
      public function homePage() {
 
-        $videogames = DB::select("SELECT * FROM videogame");
+        $videogames = DB::table("videogame")->get();
+    
 
-        return view('home.tpl.php', ['videogames' => $videogames]);
+        return view('home', ['videogames' => $videogames]);
 
      }
     
